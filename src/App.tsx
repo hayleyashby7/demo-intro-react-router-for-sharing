@@ -1,19 +1,13 @@
-
 import './App.css';
-import Header from './components/header/header';
-import Footer from './components/footer/footer';
-import Home from './components/home/home';
+import { BrowserRouter } from 'react-router-dom';
+import { AppRouter } from './components/router/router';
 
 function App() {
-  return (
-   <>
-     <Header/>
-     <main className='p-6' style={{flex:'1'}}>
-      <Home/>
-      </main>    
-     <Footer/>
-   </>
-  );
+	return (
+		<BrowserRouter>
+			<AppRouter />
+		</BrowserRouter>
+	);
 }
 
 export default App;
